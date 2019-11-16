@@ -7,14 +7,12 @@ import HomeNotification from '../../components/app/home-notification'
 import MultipleNotifications from '../../components/app/multiple-notifications'
 import WalletView from '../../components/app/wallet-view'
 import TransactionView from '../../components/app/transaction-view'
-import PermissionApproval from '../permission-approval'
 
 import {
   RESTORE_VAULT_ROUTE,
   CONFIRM_TRANSACTION_ROUTE,
   CONFIRM_ADD_SUGGESTED_TOKEN_ROUTE,
   INITIALIZE_BACKUP_SEED_PHRASE_ROUTE,
-  CONNECT_ROUTE,
 } from '../../helpers/constants/routes'
 
 export default class Home extends PureComponent {
@@ -98,7 +96,6 @@ export default class Home extends PureComponent {
       setShowRestorePromptToFalse,
       showRestorePrompt,
       threeBoxLastUpdated,
-      permissionsRequests,
     } = this.props
 
     if (forgottenPassword) {
